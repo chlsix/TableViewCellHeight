@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="MyTableViewCell" customModule="TableViewCellHeight" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一个label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g18-tg-RMj">
+                        <rect key="frame" x="10" y="10" width="300" height="48"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="第二个label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEd-Qt-H2o">
+                        <rect key="frame" x="10" y="68" width="300" height="21"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="g18-tg-RMj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="IDX-ms-Zh8"/>
+                    <constraint firstAttribute="bottom" secondItem="BEd-Qt-H2o" secondAttribute="bottom" constant="10" id="J0R-rZ-Wno"/>
+                    <constraint firstItem="BEd-Qt-H2o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XnC-Hu-Zda"/>
+                    <constraint firstItem="g18-tg-RMj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="f5t-qu-5VW"/>
+                    <constraint firstAttribute="trailing" secondItem="g18-tg-RMj" secondAttribute="trailing" constant="10" id="fLA-pG-kHZ"/>
+                    <constraint firstAttribute="trailing" secondItem="BEd-Qt-H2o" secondAttribute="trailing" constant="10" id="oUz-Ay-fQz"/>
+                    <constraint firstItem="BEd-Qt-H2o" firstAttribute="top" secondItem="g18-tg-RMj" secondAttribute="bottom" constant="10" id="qeJ-Vz-BGl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstLable" destination="g18-tg-RMj" id="Ias-VI-Hqz"/>
+                <outlet property="secondLabel" destination="BEd-Qt-H2o" id="ya6-qc-HUV"/>
+            </connections>
+            <point key="canvasLocation" x="203" y="118"/>
+        </tableViewCell>
+    </objects>
+</document>
